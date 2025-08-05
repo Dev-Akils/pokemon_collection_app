@@ -1,6 +1,10 @@
 # 🔥 Pokemon Collection App
 
 Welcome to the **Pokemon Collection App**!  
+A fun React-based app to discover, browse, and collect your favorite Pokémon!  
+Built with Tailwind CSS, React, and powered by the PokéAPI.
+🌐 **Live Demo:** [pokemon-collection-app-sxxc.vercel.app](https://pokemon-collection-app-sxxc.vercel.app/)
+
 Discover, browse, and collect your favorite Pokémon using data from the [PokeAPI]https://pokeapi.co/api/v2/pokemon/1/  
 Built with **React**, **Tailwind CSS**, and **React Query**.
 
@@ -85,6 +89,5 @@ Your Pokémon collection is saved in the browser’s localStorage under the key:
 🙌 Acknowledgements
 PokeAPI
 React Query
-
 Tailwind CSS
 
