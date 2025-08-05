@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# 🔥 Pokemon Collection App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the **Pokemon Collection App**!  
+Discover, browse, and collect your favorite Pokémon using data from the [PokeAPI]https://pokeapi.co/api/v2/pokemon/1/  
+Built with **React**, **Tailwind CSS**, and **React Query**.
 
-## Available Scripts
+<img width="1877" height="860" alt="image" src="https://github.com/user-attachments/assets/da9c5cf0-756a-451d-a002-7a18efab8f63" />
 
-In the project directory, you can run:
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 🔍 **Infinite Scrolling**: Browse Pokémon endlessly with automatic loading as you scroll.
+- 🧩 **Detailed Cards**: View each Pokémon's image, type, and base stats (HP, Attack, Defense).
+- ➕ **Add/Remove Collection**: Save your favorite Pokémon to your personal collection (stored in `localStorage`).
+- 📦 **Persistent Storage**: Your collection stays saved even after you refresh the page.
+- 🔄 **Reorder Collection** *(optional)*: Reorder Pokémon in your collection (if you implement drag & drop).
+- ⚡ **Fast and Responsive**: Styled with Tailwind CSS for a mobile-friendly experience.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📁 Folder Structure
 
-### `npm run build`
+src/
+│
+├── components/
+│ ├── DiscoveryPage.jsx // Main page with infinite scroll
+│ ├── PokemonCard.jsx // Individual Pokemon cards
+│ ├── PokemonLoader.jsx // Loader shown when fetching more data
+│ └── Header.jsx // App header showing collection info
+│
+├── hooks/
+│ └── useCollection.js // Custom hook for managing the user's collection
+│
+├── pages/
+│ └── PokemonCollectionPage.jsx //  Page to view your collection
+│
+├── App.js
+└── index.js
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🛠️ Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **React** (v18+)
+- **Tailwind CSS**
+- **React Query** (for infinite data fetching)
+- **Axios**
+- **PokeAPI** (free Pokémon data)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🧑‍💻 Getting Started
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 1. Clone the Repository
 
-## Learn More
+```bash
+git clone https://github.com/yourusername/pokemon-collection-app.git
+cd pokemon-collection-app
+2. Install Dependencies
+npm install
+3. Start the App
+npm start
+Open http://localhost:3000 in your browser to explore the app.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+💾 LocalStorage
+Your Pokémon collection is saved in the browser’s localStorage under the key:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+📷 Screenshot
+<img width="1877" height="860" alt="image" src="https://github.com/user-attachments/assets/1609c8e2-d4ac-47a1-bf4e-200bc974cf83" />
 
-### Code Splitting
+<img width="1866" height="682" alt="image" src="https://github.com/user-attachments/assets/d0ca5cf7-9ee6-48e5-85c9-1f1816e4410a" />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+📌 TODO / Improvements
+ Add and remove reordering to the collection.
 
-### Making a Progressive Web App
+ Add Pokémon detail modal or page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+🙌 Acknowledgements
+PokeAPI
+React Query
 
-### Advanced Configuration
+Tailwind CSS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
