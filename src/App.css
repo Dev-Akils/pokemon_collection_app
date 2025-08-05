@@ -1,38 +1,31 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* poke_cart buttons */
+.add_button {
+  @apply mt-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white font-semibold text-lg rounded-full shadow-md transition duration-200;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.delete_button{
+  @apply mt-2 px-4 py-1.5 bg-red-500 hover:bg-red-600 text-white rounded-full font-semibold text-lg  shadow-md transition duration-200;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* grid styling */
+.gridbg{
+  @apply flex justify-center items-center min-h-screen w-full bg-[#705EBC];
+}
+.poke_cart{
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 p-4 gap-7 max-w-7xl w-full;
+}
+.poke_cart_img{
+  @apply mx-auto mb-2 w-20 h-20 md:h-20 md:w-20 bg-gradient-to-r from-[#F083D3] to-[#F5648E] p-2 rounded-full;
+}
+.poke_state{
+  @apply text-Button_Blue_Blue font-bold text-xl;
+}
+.loader {
+  @apply inline-block w-4 h-4 border-2 border-gray-300 rounded-full animate-spin border-t-[#F271A8];
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
