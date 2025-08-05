@@ -40,6 +40,7 @@ src/
 └── index.js
 
 
+<img width="780" height="575" alt="image" src="https://github.com/user-attachments/assets/4fc856e9-13ce-4456-bf21-7f9f7296c289" />
 
 ---
 
